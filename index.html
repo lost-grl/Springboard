@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Meme Generator</title>
 </head>
 <body>
-    
+    <div id="header">
+        <h1>meme generator</h1>
+    </div>
+    <div id="form-div">
+        <form action="" id="generator-form">
+            <label for="top-text-input" class="left-align">Enter top of image text here: </label>
+            <input type="text" name="top-text" id="top-text-input" class="right-align">
+            <label for="btm-text-input" class="left-align">Enter bottom of image text here: </label>
+            <input type="text" name="btm-text" id="btm-text-input"class="right-align">
+            <label for="img-input" class="left-align">Enter image url here: </label>
+            <input type="url" name="img-input" id="img-input" class="right-align">
+            <button id="go-btn" class="right-align">Go!</button>
+        </form>
+    </div>
+    <div id="result-div" class="hidden">
+        <p>Result:</p>
+        <div id="result"></div>
+        <p>Save to Gallery? </p>
+        <button id="keep-img">Save</button>
+        <button id="discard-img">Discard</button>
+    </div>
+    <div>Your Gallery</div>
+    <div id="gallery">
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+

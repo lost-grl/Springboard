@@ -1,0 +1,130 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    border: solid black;
+    padding: 20px;
+    width: fit-content;
+    display: flex;
+}
+
+#form-div {
+    width: 50vw;
+    min-width: 625px;
+}
+
+#generator-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.left-align {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.right-align {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+button {
+    width: 80px;
+    height: 50px;
+    background-color: antiquewhite;
+    border-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:not(.delete):hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#generator-form input {
+    width: 100%;
+}
+
+#go-btn {
+    grid-column-start: 2;
+}
+
+.new-meme {
+    
+    height: 400px;
+    width: 400px;
+    font-size: 40px;
+}
+
+.top {
+    margin: 0 auto auto;
+}
+
+.btm {
+    margin: auto auto 0;
+}
+
+#result-div.hidden {
+    display: none;
+}
+
+.gallery-img {
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.meme {
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow:
+        1px 1px black,
+        -1px -1px black;
+    margin: auto;
+    font-weight: 800;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+}
+
+#gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90vw;
+    border: none;
+}
+
+#result-div {
+    display: block;
+}
+
+#result {
+    border: none;
+}
+
+button.delete {
+    background-image: url('images/delete.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    margin-left: 0;
+    width: 60px;
+    opacity: 50%;
+    transition: opacity 1s;
+}
+
+button.delete:hover {
+    opacity: 100%;
+}
