@@ -25,3 +25,7 @@ git commit -m "add html, css, and js memory game files"
 4. Push that local branch to Github to create a remote branch
 
 git push --set-upstream origin add-project
+
+Part 2: 
+
+https://lost-grl.github.io/sb-memory-game/
