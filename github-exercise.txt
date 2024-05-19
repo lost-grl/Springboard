@@ -1,0 +1,10 @@
+Part 1:
+
+1. Create a local repository and add and commit some files.
+mkdir sb-github
+cd sb-github/
+git init
+touch github-exercise.txt
+touch index.html
+add .
+
