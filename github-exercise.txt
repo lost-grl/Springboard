@@ -15,3 +15,13 @@ git commit -m "add initial files to springboard github"
 git remote add origin git@github.com:lost-grl/Springboard.git
 git branch -M main
 git push -u origin main
+
+3. Create a local branch and add and commit some files
+
+git checkout -b add-project
+git add .
+git commit -m "add html, css, and js memory game files" 
+
+4. Push that local branch to Github to create a remote branch
+
+git push --set-upstream origin add-project
